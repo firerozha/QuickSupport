@@ -1,0 +1,17 @@
+name: QuickSupport
+version: '1.0'
+main: com.github.firerozha.quicksupport.QuickSupport
+api-version: 1.18
+prefix: QuickSupport
+authors: [ FireRoz ]
+description: Let your players request support
+
+commands:
+  support:
+    aliases: quicksupport
+    description: Open a menu to get support
+
+permissions:
+  quicksupport.support:
+    description: Use /support
+    default: op

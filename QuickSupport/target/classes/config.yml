@@ -1,0 +1,60 @@
+# Thank you for downloading QuickSupport
+# If you like the plugin please leave a positive review
+
+######################
+#        GUI         #
+######################
+# Here we create the items in the menu
+# SupportSlot1 is the id, do not change it.
+# "name" is the name that displays in the menu.
+# "icon" is the item that displays in the menu.
+# "lore" is pretty self-explanatory. It's the lore of the item. (You cannot use & as a colour code so you have to use §
+# "permission" is the permission staff are required to have to see a report come in.
+# Two buttons can't have the same name. so for example there can't be 2 "&c&lTechnical support". There also can't be 2
+# "&a&lTechnical support". so you cant change the colour codes they still will be considered the same. You may change capital letters to
+# lower cased one and vice versa.
+SupportSlot1:
+  name: "&c&lTechnical support"
+  icon: NETHER_STAR
+  lore:
+    - "§8Click for technical support"
+  permission: "quicksupport.tech"
+SupportSlot2:
+  name: "&c&lIngame support"
+  icon: NETHER_STAR
+  lore:
+    - "§8Click for ingame support"
+  permission: "quicksupport.ingame"
+SupportSlot3:
+  name: "&c&lOther support"
+  icon: NETHER_STAR
+  lore:
+    - "§8Click for other types of support"
+  permission: "quicksupport.other"
+# The title of the GUI menu
+guititle: "&c&lSupport Menu"
+######################
+#      MESSAGES      #
+######################
+# The message that shows when a player does not have access to a command
+noperm: "&cYou cannot perform this command."
+# The message that asks the player what the player needs support with
+supportask: "&aPlease describe the issue in detail or type &ccancel &ato cancel."
+# The message that shows when a player cancels their support request
+supportcanceled: "&aSupport request canceled."
+# The message that shows when a player sent out a support request successfully
+supportsuccess: "&aYou have requested support. Staff will be with you shortly."
+# The message that staff get when a player requests support
+# use {supportType} to return what type of support the player needs
+# use {name} to get the name of the player who requested support
+# use {supportDetails} to see the details the player provided
+# use \n for a new line
+staffsupport: "&3[STAFF] &7{name} &brequested {supportType}&b!\n&b&l{supportDetails}"
+######################
+#       OTHER        #
+######################
+# What should the delay to the support command be? (In miliseconds)
+delay: 30000
+# The message that shows when a player cannot request support again due to the delay
+# use {delay} to get how many seconds remain for the delay
+delaymsg: "&cYou may not do this for another &4{delay} &cseconds."
