@@ -8,7 +8,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.event.player.PlayerChatEvent;
 
 import java.util.HashMap;
 
@@ -24,7 +23,7 @@ public class SupportGUI implements Listener {
     @EventHandler
     public void InventoryClick(InventoryClickEvent e) {
         Player p = (Player) e.getWhoClicked();
-        if(e.getInventory().getName().equals(ChatColor.translateAlternateColorCodes('&',
+        if(e.getView().getTitle().equals(ChatColor.translateAlternateColorCodes('&',
                 main.getConfig().getString("guititle")))) {
             if(e.getSlot() == 10 || e.getSlot() == 13 || e.getSlot() == 16) {
                 if(e.getSlot() == 10) {

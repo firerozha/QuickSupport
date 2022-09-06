@@ -30,6 +30,8 @@ public class SupportCommand implements CommandExecutor {
         this.cooldown = new HashMap<>();
     }
 
+
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(!(sender instanceof Player)) {
@@ -45,7 +47,7 @@ public class SupportCommand implements CommandExecutor {
                     Inventory support = Bukkit.createInventory(null, 27,
                             ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("guititle")));
                     //////////////////// GLASS ITEM ////////////////////
-                    ItemStack glass = new ItemStack(Material.STAINED_GLASS_PANE, 1, (byte) 8);
+                    ItemStack glass = new ItemStack(Material.LIGHT_GRAY_STAINED_GLASS_PANE, 1);
                     ItemMeta glassMeta = glass.getItemMeta();
                     glassMeta.setDisplayName(" ");
                     glass.setItemMeta(glassMeta);
@@ -96,7 +98,7 @@ public class SupportCommand implements CommandExecutor {
                         Inventory support = Bukkit.createInventory(null, 27,
                                 ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("guititle")));
                         //////////////////// GLASS ITEM ////////////////////
-                        ItemStack glass = new ItemStack(Material.STAINED_GLASS_PANE, 1, (byte) 8);
+                        ItemStack glass = new ItemStack(Material.LIGHT_GRAY_STAINED_GLASS_PANE, 1);
                         ItemMeta glassMeta = glass.getItemMeta();
                         glassMeta.setDisplayName(" ");
                         glass.setItemMeta(glassMeta);

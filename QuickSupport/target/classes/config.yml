@@ -54,7 +54,7 @@ staffsupport: "&3[STAFF] &7{name} &brequested {supportType}&b!\n&b&l{supportDeta
 #       OTHER        #
 ######################
 # What should the delay to the support command be? (In miliseconds)
-delay: 30000
+delay: 60000
 # The message that shows when a player cannot request support again due to the delay
 # use {delay} to get how many seconds remain for the delay
 delaymsg: "&cYou may not do this for another &4{delay} &cseconds."
